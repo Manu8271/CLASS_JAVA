@@ -43,12 +43,12 @@ public class SupermarketManagementSystem<Item, ItemTableModel> extends JFrame {
         tableModel = new ItemTableModel(tableModel);
         itemListTable = new JTable(TableUI);
 
-        // Set up table columns
+        // Set up the table columns
         itemListTable.getColumnModel().getColumn(0).setHeaderValue("Name");
         itemListTable.getColumnModel().getColumn(1).setHeaderValue("Price");
         itemListTable.getColumnModel().getColumn(2).setHeaderValue("Quantity");
 
-        // Set up layout
+        // Set up the  layout
         JPanel inputPanel = new JPanel(new GridLayout(3, 2));
         inputPanel.add(nameLabel);
         inputPanel.add(nameTextField);
@@ -70,11 +70,11 @@ public class SupermarketManagementSystem<Item, ItemTableModel> extends JFrame {
         mainPanel.add(buttonPanel, BorderLayout.WEST);
         mainPanel.add(itemListScrollPane, BorderLayout.CENTER);
 
-        // Add components to frame
+        // Add components to frame.
         setContentPane(mainPanel);
         add(titleLabel, BorderLayout.NORTH);
 
-        // Set up event listeners
+        // Set up the event listeners.
         addButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 addItem();
