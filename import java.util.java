@@ -1,5 +1,4 @@
-//Name - Manu Yadav
-// REG No - 20BCE10290
+
 
 // Java program to accept input from keyboard using scanner class
 
