@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class SupermarketManagementSystem<Item, ItemTableModel> extends JFrame {
 
-    // Data structures to store items
+    // Data structures to store items.
     private ArrayList<Item> items = new ArrayList<>();
 
     // GUI components
@@ -20,10 +20,10 @@ public class SupermarketManagementSystem<Item, ItemTableModel> extends JFrame {
     private JButton addButton, removeButton, editButton, clearButton;
     private JTable itemListTable;
 
-    // Table model to display item list
+    // Table model to display item list.
     private ItemTableModel tableModel;
 
-    // Constructor
+    // Constructor.
     public SupermarketManagementSystem(TableModel TableUI) {
         super("Supermarket Management System");
 
@@ -43,12 +43,12 @@ public class SupermarketManagementSystem<Item, ItemTableModel> extends JFrame {
         tableModel = new ItemTableModel(tableModel);
         itemListTable = new JTable(TableUI);
 
-        // Set up the table columns
+        // Set up the table columns.
         itemListTable.getColumnModel().getColumn(0).setHeaderValue("Name");
         itemListTable.getColumnModel().getColumn(1).setHeaderValue("Price");
         itemListTable.getColumnModel().getColumn(2).setHeaderValue("Quantity");
 
-        // Set up the  layout
+        // Set up the  layout.
         JPanel inputPanel = new JPanel(new GridLayout(3, 2));
         inputPanel.add(nameLabel);
         inputPanel.add(nameTextField);
@@ -99,7 +99,7 @@ public class SupermarketManagementSystem<Item, ItemTableModel> extends JFrame {
             }
         });
 
-        // Set up frame
+        // Set up frame.
         setSize(600, 400);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -115,9 +115,9 @@ public class SupermarketManagementSystem<Item, ItemTableModel> extends JFrame {
     protected void clearFields() {
     }
 
-    // Method to add item to list
+    // Method to add item to list.
     private void addItem() {
-        // Get input data
+        // Get input data.
         String name = nameTextField.getText();
         double price = 0;
         int quantity = 0;
