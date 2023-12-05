@@ -43,7 +43,7 @@ public class SupermarketManagementSystem<Item, ItemTableModel> extends JFrame {
         tableModel = new ItemTableModel(tableModel);
         itemListTable = new JTable(TableUI);
 
-        // Set up the table columns.
+        // Set up the table columns.table names are - Name, Price and Quantitiy
         itemListTable.getColumnModel().getColumn(0).setHeaderValue("Name");
         itemListTable.getColumnModel().getColumn(1).setHeaderValue("Price");
         itemListTable.getColumnModel().getColumn(2).setHeaderValue("Quantity");
